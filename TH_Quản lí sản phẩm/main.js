@@ -1,0 +1,10 @@
+"use strict";
+exports.__esModule = true;
+var produce_1 = require("./produce");
+var produceManager_1 = require("./produceManager");
+var produce1 = new produce_1.Produce("tivi", 10000);
+var produce2 = new produce_1.Produce("may giac", 50000);
+var produceManager = new produceManager_1.ProduceManager();
+produceManager.add(produce1);
+produceManager.add(produce2);
+console.log(produceManager.showList());
